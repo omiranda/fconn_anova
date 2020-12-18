@@ -9,5 +9,5 @@ pages:
 - Exploring output tables and figures: ./outputs/outputs.md
 - Advanced options: ./advanced_usage/advanced_usage.md
 - Coming next: ./coming_next/coming_next.md
-- Known issues: ./known_issues/issues.md
+- Known issues: ./known_issues/known_issues.md
 - Installation and set-up: ./set_up/set_up.md
