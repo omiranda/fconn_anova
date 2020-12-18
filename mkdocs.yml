@@ -2,7 +2,7 @@ site_name: fconn_anova
 theme: material
 plugins:
   - search
-pages:
+nav:
 - Intro: ./intro/intro.md
 - Basic example: ./basic_example/basic_example.md
 - Detailed specifications for input files and data: ./details/details.md
