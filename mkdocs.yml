@@ -1,0 +1,24 @@
+site_name: fconn_anova
+theme: material
+plugins:
+  - search
+pages:
+- Intro: ./intro/intro.md
+- Basic example: ./basic_example/basic_example.md
+- Detailed specifications for input files and data: ./details/details.md
+- Exploring output tables and figures: ./outputs/outputs.md
+- Advanced options: ./advanced_usage/advanced_usage.md
+- Coming next: ./coming_next/coming_next.md
+- Known issues: ./known_issues/issues.md
+- Installation and set-up: ./set_up/set_up.md
+
+
+- Intro: ./overview/to_run_fconn_regression.html
+- Overview: fconn_regression.md
+- Predicting outcome using parcellated data: fconn_regression_1_sample.md
+- Predicting outcome using two samples: fconn_regression_2_samples.md
+- Real cross-validation using two samples: fconn_regression_xval.md
+- Detailed specifications for input files and data: detailed_description.md
+- Coming next: coming_next.md
+- Known issues: issues.md
+- Installation and set-up: install_and_setup.md
