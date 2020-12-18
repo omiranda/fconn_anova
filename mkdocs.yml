@@ -3,7 +3,7 @@ theme: material
 plugins:
   - search
 pages:
-- Intro: ./overview/to_run_fconn_regression.html
+- Intro: ./intro/intro.md
 - Overview: fconn_regression.md
 - Predicting outcome using parcellated data: fconn_regression_1_sample.md
 - Predicting outcome using two samples: fconn_regression_2_samples.md
