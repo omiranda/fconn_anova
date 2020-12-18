@@ -3,11 +3,12 @@ theme: material
 plugins:
   - search
 nav:
-- Intro: ./intro/intro.md
-- Basic example: ./basic_example/basic_example.md
-- Detailed specifications for input files and data: ./details/details.md
-- Exploring output tables and figures: ./outputs/outputs.md
-- Advanced options: ./advanced_usage/advanced_usage.md
-- Coming next: ./coming_next/coming_next.md
-- Known issues: ./known_issues/issues.md
-- Installation and set-up: ./set_up/set_up.md
+- Intro: intro.md
+#- Intro: ./intro/intro.md
+#- Basic example: ./basic_example/basic_example.md
+#- Detailed specifications for input files and data: ./details/details.md
+#- Exploring output tables and figures: ./outputs/outputs.md
+#- Advanced options: ./advanced_usage/advanced_usage.md
+#- Coming next: ./coming_next/coming_next.md
+#- Known issues: ./known_issues/issues.md
+#- Installation and set-up: ./set_up/set_up.md
