@@ -1,4 +1,4 @@
-site_name: fconn_regression
+site_name: fconn anova
 theme: material
 plugins:
   - search
