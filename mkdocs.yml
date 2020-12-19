@@ -6,8 +6,9 @@ pages:
 - Intro: ./intro/intro.md
 - Basic example: ./basic_example/basic_example.md
 - Detailed specifications for input files and data: ./details/detailed_description.md
+- Advanced example using longitudinal data: ./advanced_example/advanced_example.md
 - Exploring output tables and figures: ./outputs/outputs.md
 - Advanced options: ./advanced_usage/advanced_usage.md
 - Coming next: ./coming_next/coming_next.md
-- Known issues: ./known_issues/known_issues.md
+- Tips and known issues: ./known_issues/known_issues.md
 - Installation and set-up: ./set_up/set_up.md
