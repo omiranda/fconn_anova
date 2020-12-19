@@ -2,9 +2,9 @@
 
 ## Mandatory Inputs 
 
-- **path_imaging**. Neuroimaging data. Path to neuroimaging data
+- **path_imaging**. Neuroimaging data. Path to neuroimaging data. This input argument can be:
     - path to a dot mat file where the last dimension corresponds to participant index
-    - path to a csv file with imaging data where the number of columns dimension corresponds to participant index (check this with code run for Carla with Cortical thickness). No headers
+    - path to a csv file with imaging data where the number of columns dimension corresponds to participant index. No headers
     - path to a txt file with paths to individual files with neuroimaging data. No headers
         - dot mat
         - cifti
