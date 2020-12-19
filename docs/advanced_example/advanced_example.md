@@ -3,20 +3,21 @@ In this example we will use fake data from 20 participants. We will assume that 
 - **within factor**: age: 06, 12, 24 and 36
 
 
-## 1. **path_imaging**
+## 1. path_imaging
 
-We will assume that the connectivity matrices were made using the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) and that there were 96 surviving scans. This means that the 3D array made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) contains connectivity matrices for 96 scans and that we need to ignore data from 16 scans. Order and ID of the participants are saved in the corresponding text file made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/).
+We will assume that the connectivity matrices were made using the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) and that there were 96 surviving scans. This means that [this file](./Zfconn_407_frames.mat) contains a 3D array made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) contains connectivity matrices for 96 scans and that we need to ignore data from 16 scans. Order and ID of the participants are saved in the corresponding text file made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/).
 
 ## 2. path_demographics_Table
 
-In this csv file we will make group assignment and also indicate which scan to include (see details in the section [Detailed specifications for input files and data](../details/detailed_description.md)). This file has 4 columns with the following headers:
+In [this csv](./subjects_table.csv) file we will make group assignment and also indicate which scan to include (see details in the section [Detailed specifications for input files and data](../details/detailed_description.md)). This file has 4 columns with the following headers:
 
 - **id**: This column indicate the subject id.
-- **consecutive_number**: Here you specify the relative position of the corresponding coonnectivity matrix as stored in **path_imaging**.
-- **age**: Here we decided to name one of the factors **age**. Notice that you can use the name that you want. Corresponding row indicates the age of the participant when the scan was acquired. Noticed that this variable is *text*. The analysis will assume that this variable is categorical.
-- **group**: Here
+- **consecutive_number**: Here you specify the relative position of the corresponding coonnectivity matrix, as stored in **path_imaging**.
+- **age**: Here we decided to name one of the factors **age**. Notice that you can use the name that you want. Corresponding row indicates the age of the participant when the scan was acquired. Noticed that this variable is *text*. The analysis will assume that this variable is categorical. This is a *within* factor and will be declared as such in the **path_group_Design_Table**.
+- **group**: Here we decided to name one of the factors **group**. Notice that you can use the name that you want. Corresponding row indicates the treatment (ctrl or case). Noticed that this variable is *text*. The analysis will assume that this variable is categorical. This is a *between* factor and will be declared as such in the **path_group_Design_Table**.
 
-Here we show a few rows 
+Here is a preview of a few rows:
+
 ```
 id,consecutive_number,age,group
 sub-MMU45938,1,12m,case
