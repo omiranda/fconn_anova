@@ -1,4 +1,5 @@
-In this example we will use fake data from 20 participants. We will assume that each participant was scanned four times (at 6, 12, 24 and 36 months of age) and that each participant is assigned to either thre control (ctrl) or case (case) group. Hence, we need a total of 80 scans.
+In this example we will use fake data from 20 participants. We will assume that each participant was scanned four times (at 6, 12, 24 and 36 months of age) and that each participant is assigned to either thre control (ctrl) or case (case) group. Hence, we need a total of 80 scans:
+
 - **between factor**: group: ctrl and case
 - **within factor**: age: 06, 12, 24 and 36
 
@@ -16,7 +17,7 @@ In [this csv](./subjects_table.csv) file we will make group assignment and also 
 - **age**: Here we decided to name one of the factors **age**. Notice that you can use the name that you want. Corresponding row indicates the age of the participant when the scan was acquired. Noticed that this variable is *text*. The analysis will assume that this variable is categorical. This is a *within* factor and will be declared as such in the **path_group_Design_Table**.
 - **group**: Here we decided to name one of the factors **group**. Notice that you can use the name that you want. Corresponding row indicates the treatment (ctrl or case). Noticed that this variable is *text*. The analysis will assume that this variable is categorical. This is a *between* factor and will be declared as such in the **path_group_Design_Table**.
 
-Here is a preview of a few rows:
+Here is a preview of a few rows (notice that connectivity matrices 7-10 from the file [path_imaging](./Zfconn_407_frames.mat) will be ignored):
 
 ```
 id,consecutive_number,age,group
