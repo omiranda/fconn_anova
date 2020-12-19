@@ -1,19 +1,24 @@
-In this example we will use fake data from 20 participants. We will assume that each participant was scanned four times (6, 12 24 and 36 months of age) and that each participant is assigned to the the group control (ctrl) or case (case).
+In this example we will use fake data from 20 participants. We will assume that each participant was scanned four times (at 6, 12, 24 and 36 months of age) and that each participant is assigned to either thre control (ctrl) or case (case) group. Hence, we need a total of 80 scans.
 - **between factor**: group: ctrl and case
 - **within factor**: age: 06, 12, 24 and 36
 
-We will assume that the connectivity matrices were made using the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) and that there were 96 surviving participants. This means that the 3D array made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) contains connectivity matrices for 96 participants.
+
+## 1. **path_imaging**
+
+We will assume that the connectivity matrices were made using the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) and that there were 96 surviving scans. This means that the 3D array made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) contains connectivity matrices for 96 scans and that we need to ignore data from 16 scans. Order and ID of the participants are saved in the corresponding text file made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/).
+
+## 2. **path_demographics_Table**
+
+In this csv file we will make group assignment and also indicate which scan to include (input **path_imaging**). As defined in the [Detailed specifications for input files and data](../details.detailed_description.md)
 
 
-## 1. Preparing the **path_demographics_Table**
+## 3. path_group_Design_Table
 
-## 2. path_group_Design_Table
+## 4. path_Group_Color_Table
 
-## 3. path_Group_Color_Table
+## 5. Defining options
 
-## 4. Defining options
-
-## 5. Runing the example
+## 6. Runing the example
 ```
 % Mandatory inputs
 path_imaging='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Basic_example\fconn_63_scanns.mat';
