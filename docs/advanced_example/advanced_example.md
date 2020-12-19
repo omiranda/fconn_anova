@@ -38,9 +38,13 @@ age,within
 group,between
 ```
 
-## 4. path_Group_Color_Table
+## 4. path_parcellation_table
 
-In [this optional csv](./Group_Design_Table.csv) file we will define the colors for each subgroup. Notice that the R, G abd B components are provided in the range of `0` to `1`. YOu might want to use a colorblind palette. Here is a couple of resources to identify colors:
+This is a [Matlab file](./parcel.mat) that has the assignment of each ROI to their corresponding network.
+
+## 5. path_Group_Color_Table
+
+In [this optional csv](./Group_Design_Table.csv) file we will define the colors for each subgroup. Notice that the R, G and B components are provided in the range of 0 to 1. You might want to use a colorblind palette. Here is a couple of resources to identify colors:
 
 - [Color Brewer](https://colorbrewer2.org/)
 - [Color Universal Design](https://jfly.uni-koeln.de/color/)
@@ -57,11 +61,52 @@ case,0.631372549,0.843137255,0.415686275
 36m,0.694117647,0,0.149019608
 ```
 
-## 5. Defining options
+## 6. Defining options
 
-In [this optional matlab file](./define_options.m)
+In [this optional matlab file](./define_options.m) you can modify default options for the analysis. See details in the section [Advanced options](../advanced_usage/advanced_usage.md). This is the content of the file used here:
 
-## 6. Runing the example
+```
+%% Define options for repeated measures anova n
+
+% Correction for multiple comparisons
+% correction_type:
+% 1}='tukey-kramer';
+% 2}='dunn-sidak';
+% 3}='bonferroni';
+% 4}='scheffe';
+% 5}='lsd';
+options.correction_type=2;
+
+% Here you define if you want to make the analysis on a few networks or
+% not. It acceots as input a vector with the functional networks you want
+% to include. IF not provided, it uses all the available networks. You can
+% also us as input '[]' to use all the networks
+% options.resort_parcel_order=[];
+options.resort_parcel_order=[5 6 7];
+options.resort_parcel_order=[];
+
+% Apply Fisher_Z_transform to connectivity values. Use 1 or 0
+options.calculate_Fisher_Z_transform=0;
+
+% Apply an optimized box_cox transform to the data.
+options.boxcox_transform=0;
+
+options.save_figures=1;
+options.display_figures=1;
+% options.plot_uncorrected_NN_other_factor=1;
+
+% p-value threshold used for visualization
+options.p_th=[0.05];
+
+% show numerical scale for connectivity values (y-axis)
+options.show_y_scale=1;
+
+% options.filename_to_save_all_before_plotting
+options.filename_to_save_all_before_plotting='all_results';
+```
+
+
+## 7. Runing the example
 ```
 % Mandatory inputs
 path_imaging='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Basic_example\fconn_63_scanns.mat';

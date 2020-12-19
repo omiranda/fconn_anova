@@ -32,3 +32,6 @@ options.p_th=[0.05];
 
 % show numerical scale for connectivity values (y-axis)
 options.show_y_scale=1;
+
+% options.filename_to_save_all_before_plotting
+options.filename_to_save_all_before_plotting='all_results';
