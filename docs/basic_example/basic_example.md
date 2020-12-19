@@ -118,4 +118,12 @@ When completed, you will see the main anova table
 
 ## Outputs saved in *output_folder*
 
-The function will save figures and data in the **output_folder**
+The function will save figures and data in the **output_folder**. 
+
+```
+.
+|____figures_by_network
+|____main_analysis
+|____planB_by_networks
+
+```
