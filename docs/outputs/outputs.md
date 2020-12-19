@@ -8,3 +8,10 @@ As mentioned before, the function will save figures and data in the **output_fol
 |____figures_by_network
 ```
 
+## main_analysis
+
+This folder contains the result for the main analysis, ie when all the connectivity values are used for the repeated measures anova. 
+
+## planB_by_networks
+
+## figures_by_network
