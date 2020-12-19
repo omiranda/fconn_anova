@@ -5,10 +5,10 @@ plugins:
 pages:
 - Intro: ./intro/intro.md
 - Inputs: ./details/detailed_description.md
+- Advanced options: ./advanced_usage/advanced_usage.md
 - Basic example: ./basic_example/basic_example.md
 - Advanced example using longitudinal data: ./advanced_example/advanced_example.md
 - Outputs: ./outputs/outputs.md
-- Advanced options: ./advanced_usage/advanced_usage.md
 - Coming next: ./coming_next/coming_next.md
 - Tips and known issues: ./known_issues/known_issues.md
 - Installation and set-up: ./set_up/set_up.md
