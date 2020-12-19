@@ -30,9 +30,36 @@ sub-MMU45967,11,12m,case
 
 ## 3. path_group_Design_Table
 
+In [this csv](./Group_Design_Table.csv) file we will definethe groups as *between* or *within(repeated)* factors. This is the content of the file:
+
+```
+Variable,Design
+age,within
+group,between
+```
+
 ## 4. path_Group_Color_Table
 
+In [this optional csv](./Group_Design_Table.csv) file we will define the colors for each subgroup. Notice that the R, G abd B components are provided in the range of `0` to `1`. YOu might want to use a colorblind palette. Here is a couple of resources to identify colors:
+
+- [Color Brewer](https://colorbrewer2.org/)
+- [Color Universal Design](https://jfly.uni-koeln.de/color/)
+
+
+This is the content of this file:
+```
+subgroup,R,G,B
+ctrl,0.874509804,0.639215686,0.788235294
+case,0.631372549,0.843137255,0.415686275
+06m,0.992156863,0.552941176,0.235294118
+12m,0.988235294,0.305882353,0.164705882
+24m,0.890196078,0.101960784,0.109803922
+36m,0.694117647,0,0.149019608
+```
+
 ## 5. Defining options
+
+In [this optional matlab file](./define_options.m)
 
 ## 6. Runing the example
 ```
