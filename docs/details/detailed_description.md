@@ -23,6 +23,11 @@ They need to be provided in this order:
         - R. Number from 0 to 1 to indicate the Red value for the RGB colormap.
         - G. Number from 0 to 1 to indicate the Green value for the RGB colormap.
         - B. Number from 0 to 1 to indicate the Blue value for the RGB colormap.
+
+        Here is a couple of examples:
+
+        - [Gordon](./Gordon.csv)
+        - [Bezgin](./Bezgin.csv)
 ## Optional inputs
 
 
