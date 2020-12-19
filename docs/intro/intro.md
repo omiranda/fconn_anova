@@ -10,4 +10,4 @@ Following sections show several examples, define mandatory and optional argument
 If you use it, please cite:
 
 
-Miranda-Domínguez, Ó., Ragothaman, A., Hermosillo, R., Feczko, E., Morris, R., Carlson-Kuhta, P., Nutt, J. G., Mancini, M., Fair, D., & Horak, F. (2020). Lateralized Connectivity between Globus Pallidus and Motor Cortex is Associated with Freezing of Gait in Parkinson’s Disease. Neuroscience.  doi: 10.1016/j.neuroscience.2020.06.036
+Miranda-Domínguez, Ó., Ragothaman, A., Hermosillo, R., Feczko, E., Morris, R., Carlson-Kuhta, P., Nutt, J. G., Mancini, M., Fair, D., & Horak, F. (2020). Lateralized Connectivity between Globus Pallidus and Motor Cortex is Associated with Freezing of Gait in Parkinson’s Disease. Neuroscience.  doi: [10.1016/j.neuroscience.2020.06.036](https://pubmed.ncbi.nlm.nih.gov/32629155/)
