@@ -4,10 +4,10 @@ plugins:
   - search
 pages:
 - Intro: ./intro/intro.md
+- Inputs: ./details/detailed_description.md
 - Basic example: ./basic_example/basic_example.md
-- Detailed specifications for input files and data: ./details/detailed_description.md
 - Advanced example using longitudinal data: ./advanced_example/advanced_example.md
-- Exploring output tables and figures: ./outputs/outputs.md
+- Outputs: ./outputs/outputs.md
 - Advanced options: ./advanced_usage/advanced_usage.md
 - Coming next: ./coming_next/coming_next.md
 - Tips and known issues: ./known_issues/known_issues.md
