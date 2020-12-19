@@ -11,8 +11,8 @@ As mentioned before, the function will save figures and data in the **output_fol
 On these folders, you will see that the files have several key elements on their names:
 
 - **groups**:  For example, some files will have the group names (age, treatment, etc). Files corresponding to interactions will have the groups tested together. 
-- **p values**: The string `_p_th_0_05' or '_p_th_1_00' indicates that the results correspond to a *p value* of 0.05 or 1.00, respectively. Notice that the *dot* is replaced with *_*. The threshold value is defined in the options. 
-- **correction for multiple comparisons**: The string '_corrected_flag_1' and '_corrected_flag_0' are used to indicate that the results are corrected or not for multiple comparisons, respectively. Notice the flag is treated as binary: 1 for yes and 0 for no.
+- **p values**: The string `_p_th_0_05` or `_p_th_1_00` indicates that the results correspond to a *p value* of 0.05 or 1.00, respectively. Notice that the *dot* is replaced with *_*. The threshold value is defined in the options. 
+- **correction for multiple comparisons**: The string `_corrected_flag_1` and `_corrected_flag_0` are used to indicate that the results are corrected or not for multiple comparisons, respectively. Notice the flag is treated as binary: 1 for yes and 0 for no.
 
 
 ## main_analysis
