@@ -95,11 +95,27 @@ tbl =
 
 ```
 
-### Repeated Measures Anova table
+### Repeated Measures ANOVA table
 
 When completed, you will see the main anova table
 
-![main anova table](./output_folder/main_analysis/main_anova_table.png)
+```
 
+                             SumSq        DF         MeanSq        F         pValue        pValueGG      pValueHF      pValueLB 
+                            _______    _________    _________    ______    ___________    __________    __________    __________
+
+    (Intercept)              1.0812            1       1.0812    25.872     3.8504e-06    3.8504e-06    3.8504e-06    3.8504e-06
+    Housing                 0.70258            2      0.35129    8.4058     0.00060499    0.00060499    0.00060499    0.00060499
+    Error                    2.5075           60     0.041791                                                                   
+    (Intercept):Networks      5.665           27      0.20982    33.171    5.7264e-134     1.924e-50    1.4525e-60    3.0868e-07
+    Housing:Networks        0.70867           54     0.013124    2.0748     1.0394e-05     0.0043155     0.0020329        0.1345
+    Error(Networks)          10.247         1620    0.0063252                                                                   
+    (Intercept):conn         44.087         3320     0.013279    3.1201              0    1.7244e-11    5.5522e-42       0.08242
+    Housing:conn             29.238         6640    0.0044033    1.0346       0.025955       0.39207       0.31223       0.36162
+    Error(conn)               847.8    1.992e+05     0.004256                                                                   
+
+```
 
 ## Outputs saved in *output_folder*
+
+The function will save figures and data in the **output_folder**
