@@ -6,11 +6,11 @@ In this example we will use fake data from 20 participants. We will assume that 
 ## 1. Preparing the inputs
 
 
-### 1.1. path_imaging
+### path_imaging
 
 We will assume that the connectivity matrices were made using the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) and that there were 96 surviving scans. This means that [this file](./Zfconn_407_frames.mat) contains a 3D array made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) contains connectivity matrices for 96 scans and that we need to ignore data from 16 scans. Order and ID of the participants are saved in the corresponding text file made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/).
 
-### 1.2. path_demographics_Table
+### path_demographics_Table
 
 In [this csv](./subjects_table.csv) file we will make group assignment and also indicate which scan to include (see details in the section [Detailed specifications for input files and data](../details/detailed_description.md)). This file has 4 columns with the following headers:
 
@@ -30,7 +30,7 @@ sub-MMU45938,4,06m,case
 sub-MMU45967,11,12m,case
 ```
 
-### 1.3. path_group_Design_Table
+### path_group_Design_Table
 
 In [this csv](./Group_Design_Table.csv) file we will define the groups as *between* or *within(repeated)* factors. This is the content of the file:
 
@@ -40,11 +40,11 @@ age,within
 group,between
 ```
 
-### 1.4. path_parcellation_table
+### path_parcellation_table
 
 This is a [Matlab file](./parcel.mat) that has the assignment of each ROI to their corresponding network (see details in the section [Detailed specifications for input files and data](../details/detailed_description.md)).
 
-### 1.5. path_Group_Color_Table
+### path_Group_Color_Table
 
 In [this optional csv](./Group_Design_Table.csv) file we will define the colors for each subgroup. Notice that the R, G and B components are provided in the range of 0 to 1. You might want to use a colorblind palette. Here is a couple of resources to identify colors:
 
@@ -63,7 +63,7 @@ case,0.631372549,0.843137255,0.415686275
 36m,0.694117647,0,0.149019608
 ```
 
-### 1.6. Defining options
+### Defining options
 
 In [this optional matlab file](./define_options.m) you can modify default options for the analysis. See details in the section [Advanced options](../advanced_usage/advanced_usage.md). This is the content of the file used here:
 
