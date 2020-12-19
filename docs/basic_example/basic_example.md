@@ -50,4 +50,56 @@ First you will see the network names and ROI count for the parcellation schema p
 __________________________________
 Total = 82 ROIs
 ```
+
+### Options
+Next, you will see the options used for the analysis:
+
+```
+options = 
+
+  struct with fields:
+
+                 resort_parcel_order: [1×7 double]
+                          ix_sorting: [82×1 double]
+        calculate_Fisher_Z_transform: 0
+                    boxcox_transform: 0
+                     correction_type: 'tukey-kramer'
+                        save_figures: 1
+                     display_figures: 1
+    plot_uncorrected_NN_other_factor: 0
+                                p_th: 0.0500
+                        show_y_scale: 0
+                        show_p_value: 1
+                   is_connectotyping: 0
+                    avoid_main_table: 1
+                     use_half_matrix: 0
+```
+
+### Test being executed
+
+Then, you will see the test being executed:
+
+```
+Executing rm = fitrm(t,'x1-x3321 ~ Housing', 'WithinDesign',within_plus_conn);
+Mauchly's test for sphericity 
+
+
+tbl =
+
+  1×4 table
+
+    W    ChiStat        DF        pValue
+    _    _______    __________    ______
+
+    0     -Inf      5.5129e+06      1   
+
+```
+
+### Repeated Measures Anova table
+
+When completed, you will see the main anova table
+
+![main anova table](./output_folder/main_analysis/main_anova_table.png)
+
+
 ## Outputs saved in *output_folder*
