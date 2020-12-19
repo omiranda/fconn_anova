@@ -33,5 +33,21 @@ run_fconn_anovan(path_imaging,...
 
 ## Outputs displayed in terminal of Matlab
 
+The function provides some feedback on terminal
 
+### ROI set
+
+First you will see the network names and ROI count for the parcellation schema provided as input ([**path_parcellation_table**](./parcel.mat)).
+
+```
+1) auditory          (Aud), n =  4
+2) default mode      (Def), n = 26
+3) dorsal attention  (DoA), n = 10
+4) insular-opercular (InO), n =  7
+5) limbic            (Lmb), n = 14
+6) somatomotor       (SoM), n = 13
+7) visual            (Vis), n =  8
+__________________________________
+Total = 82 ROIs
+```
 ## Outputs saved in *output_folder*
