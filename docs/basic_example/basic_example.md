@@ -1,0 +1,1 @@
+In this example we'll use fake data from 63 participants. Data was parcellated using the ROI definition provided by [Bezgin et al, 2012](https://pubmed.ncbi.nlm.nih.gov/22521477/) and the ROIs were assigned to functional networks as defined by [Grayson et al., 2016](https://pubmed.ncbi.nlm.nih.gov/27477019/)
