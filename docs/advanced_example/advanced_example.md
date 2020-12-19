@@ -1,18 +1,19 @@
-In this example we'll use fake data from 63 participants where each participant can belong to the **Housing** groups *G1*, *G2*, or *G3* (Tha variable Housing is defined in the demographics table. The user can define their own variable name). Data was parcellated using the ROI definition by [Bezgin et al, 2012](https://pubmed.ncbi.nlm.nih.gov/22521477/). ROIs were assigned to functional networks as proposed by [Grayson et al., 2016](https://pubmed.ncbi.nlm.nih.gov/27477019/)
+In this example we will use fake data from 20 participants. We will assume that each participant was scanned four times (6, 12 24 and 36 months of age) and that each participant is assigned to the the group control (ctrl) or case (case).
+- **between factor**: group: ctrl and case
+- **within factor**: age: 06, 12, 24 and 36
 
-## Mandatory inputs, quick overview
-
-- [**path_imaging**](./fconn_63_scanns.mat): This input can be a path to a file containing the connectivity matrices for each participant. It can be the output file made by the  [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/).
-- [**path_demographics_Table**](./table_subjects.csv): File that describes the relative position of each connectivity matrix on **path_imaging**. It also assign each participant to its corresponding group.
-- [**path_group_Design_Table**](./Group_Design_Table.csv): It defines what type of variable the grouping variables as *within* or *between* factor,
-- [**path_parcellation_table**](./parcel.mat): File assigning ROIs to functional networks.
+We will assume that the connectivity matrices were made using the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) and that there were 96 surviving participants. This means that the 3D array made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) contains connectivity matrices for 96 participants.
 
 
-## Optional inputs, quick overview
-- **output_folder**: path to folder to save data. The folder is created if it does not exist. If not provided, data is saved at the folder you are in.
-    
+## 1. Preparing the **path_demographics_Table**
 
-## Runing the example
+## 2. path_group_Design_Table
+
+## 3. path_Group_Color_Table
+
+## 4. Defining options
+
+## 5. Runing the example
 ```
 % Mandatory inputs
 path_imaging='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Basic_example\fconn_63_scanns.mat';
@@ -23,6 +24,7 @@ path_parcellation_table='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_a
 % Optional input
 output_folder='C:\Users\oscar\Downloads\output_fconn_anovan\basic_example';
 
+% Actual work
 run_fconn_anovan(path_imaging,...
     path_demographics_Table,...
     path_group_Design_Table,...
