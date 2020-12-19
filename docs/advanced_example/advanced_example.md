@@ -199,7 +199,8 @@ tbl =
 
 When completed, you will see the main anova table
 
-```ranovatbl =
+```
+ranovatbl =
 
   18×8 table
 
@@ -224,7 +225,6 @@ When completed, you will see the main anova table
     (Intercept):age:conn        1075.1          9960     0.10794    3.2403              0      0.001145    3.4601e-06       0.08962
     group:age:conn              442.89          9960    0.044467    1.3348     2.2763e-95       0.22188       0.14973       0.26393
     Error(age:conn)             5640.6    1.6932e+05    0.033313                                                                   
-
 
 ```
 
