@@ -7,10 +7,19 @@ In this example we will use fake data from 20 participants. We will assume that 
 
 We will assume that the connectivity matrices were made using the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) and that there were 96 surviving scans. This means that the 3D array made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/) contains connectivity matrices for 96 scans and that we need to ignore data from 16 scans. Order and ID of the participants are saved in the corresponding text file made by the [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/).
 
-## 2. **path_demographics_Table**
+## 2. path_demographics_Table
 
-In this csv file we will make group assignment and also indicate which scan to include (input **path_imaging**). As defined in the [Detailed specifications for input files and data](../details.detailed_description.md)
+In this csv file we will make group assignment and also indicate which scan to include. As defined in the [Detailed specifications for input files and data](../details/detailed_description.md)
 
+Here we show a few rows 
+```
+id,consecutive_number,age,group
+sub-MMU45938,1,12m,case
+sub-MMU45938,2,24m,case
+sub-MMU45938,3,36m,case
+sub-MMU45938,4,06m,case
+sub-MMU45967,11,12m,case
+``
 
 ## 3. path_group_Design_Table
 
