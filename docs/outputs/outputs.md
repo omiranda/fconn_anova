@@ -17,7 +17,12 @@ On these folders, you will see that the files have several key elements on their
 
 ## main_analysis
 
-This folder contains the result for the main analysis, ie when all the connectivity values are used for the repeated measures anova. 
+This folder contains the result for the main analysis, ie when all the connectivity values are used for the repeated measures anova. Here you will see figures for several posthocs. In addition, this folder contains two subfolders:
+
+- **summary**: More relevant figures and tables are saved here
+- **posthoc_tables**: Files correspond to
+    - Marginal means for each group and subgroups. In this example, the corresponding files are:
+    - post-hoc tables for each factor and interaction tested in the analysis. In this example, the corresponding files are:
 
 ## planB_by_networks
 
