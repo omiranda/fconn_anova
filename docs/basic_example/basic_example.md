@@ -127,6 +127,6 @@ The function will save figures and data in the **output_folder**.
 |____figures_by_network
 ```
 
-- **main_analysis**: Tables and figures for the main analysis, ie, using all the connectivity values. Figures are saved in the formats png, tif and fig. Fig is a Matlab file format that allows open the figure in Matlab in a different system. You might want to use this format if you run the analysis in a linux-like machine but you prefered the rendering provided by Matlab running on a Mac or Windows computer.
+- **main_analysis**: Tables and figures for the main analysis, ie, using all the connectivity values. Figures are saved in the formats png, tif and fig. Fig is a Matlab file format that allows open the figure in Matlab in a different system. You might want to use this format if you run the analysis in a linux-like machine but you prefered the rendering provided by Matlab running on a Mac or Windows computer. Them you can just open and print/export the figure from the prefered computer.
 - **planB_by_networks**: Tables and figures for the repeated measures anova calculated for each functional system pair.
 - **figures_by_network**: Unipanel figures for each functional system pair.
