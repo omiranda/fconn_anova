@@ -30,7 +30,7 @@ sub-MMU45967,11,12m,case
 
 ## 3. path_group_Design_Table
 
-In [this csv](./Group_Design_Table.csv) file we will definethe groups as *between* or *within(repeated)* factors. This is the content of the file:
+In [this csv](./Group_Design_Table.csv) file we will define the groups as *between* or *within(repeated)* factors. This is the content of the file:
 
 ```
 Variable,Design
@@ -109,24 +109,27 @@ options.filename_to_save_all_before_plotting='all_results';
 ## 7. Runing the example
 ```
 % Mandatory inputs
-path_imaging='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Basic_example\fconn_63_scanns.mat';
-path_demographics_Table='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Basic_example\table_subjects.csv';
-path_group_Design_Table='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Basic_example\Group_Design_Table.csv';
-path_parcellation_table='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Basic_example\parcel.mat';
+path_imaging='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Example_4_time_points\Zfconn_407_frames.mat';
+path_demographics_Table='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Example_4_time_points\subjects_table.csv';
+path_group_Design_Table='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Example_4_time_points\Group_Design_Table.csv';
+path_parcellation_table='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Example_4_time_points\parcel.mat';
 
-% Optional input
-output_folder='C:\Users\oscar\Downloads\output_fconn_anovan\basic_example';
+% Optional inputs
+path_Group_Color_Table ='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Example_4_time_points\Group_Color_Table.csv';
+path_options='C:\Users\oscar\OneDrive\matlab_code\fconn_stats\fconn_anova\readme\Data\Example_4_time_points\define_options.m';
+output_folder='C:\Users\oscar\Downloads\output_fconn_anovan\Example_4_time_points';
 
-% Actual work
+% Do it!
 run_fconn_anovan(path_imaging,...
     path_demographics_Table,...
     path_group_Design_Table,...
     path_parcellation_table,...
+    'path_Group_Color_Table',path_Group_Color_Table,...
+    'options',path_options,...
     'output_folder',output_folder);
-}
 ```
 
-## Outputs displayed in terminal of Matlab
+## 8. Outputs displayed in terminal of Matlab
 
 The function provides some feedback on terminal
 
@@ -154,20 +157,22 @@ options =
 
   struct with fields:
 
-                 resort_parcel_order: [1×7 double]
-                          ix_sorting: [82×1 double]
-        calculate_Fisher_Z_transform: 0
-                    boxcox_transform: 0
-                     correction_type: 'tukey-kramer'
-                        save_figures: 1
-                     display_figures: 1
-    plot_uncorrected_NN_other_factor: 0
-                                p_th: 0.0500
-                        show_y_scale: 0
-                        show_p_value: 1
-                   is_connectotyping: 0
-                    avoid_main_table: 1
-                     use_half_matrix: 0
+                         correction_type: 'dunn-sidak'
+                     resort_parcel_order: [1 2 3 4 5 6 7]
+            calculate_Fisher_Z_transform: 0
+                        boxcox_transform: 0
+                            save_figures: 1
+                         display_figures: 1
+                                    p_th: 0.0500
+                            show_y_scale: 1
+    filename_to_save_all_before_plotting: 'all_results'
+                              ix_sorting: [82×1 double]
+        plot_uncorrected_NN_other_factor: 0
+                            show_p_value: 1
+                       is_connectotyping: 0
+                        avoid_main_table: 1
+                         use_half_matrix: 0
+
 ```
 
 ### Test being executed
@@ -175,9 +180,8 @@ options =
 Then, you will see the test being executed:
 
 ```
-Executing rm = fitrm(t,'x1-x3321 ~ Housing', 'WithinDesign',within_plus_conn);
+Executing rm = fitrm(t,'x1-x13284 ~ group', 'WithinDesign',within_plus_conn);
 Mauchly's test for sphericity 
-
 
 tbl =
 
@@ -186,8 +190,7 @@ tbl =
     W    ChiStat        DF        pValue
     _    _______    __________    ______
 
-    0     -Inf      5.5129e+06      1   
-
+    0     -Inf      8.8226e+07      1   
 ```
 
 ### Repeated Measures ANOVA table
@@ -195,19 +198,6 @@ tbl =
 When completed, you will see the main anova table
 
 ```
-
-                             SumSq        DF         MeanSq        F         pValue        pValueGG      pValueHF      pValueLB 
-                            _______    _________    _________    ______    ___________    __________    __________    __________
-
-    (Intercept)              1.0812            1       1.0812    25.872     3.8504e-06    3.8504e-06    3.8504e-06    3.8504e-06
-    Housing                 0.70258            2      0.35129    8.4058     0.00060499    0.00060499    0.00060499    0.00060499
-    Error                    2.5075           60     0.041791                                                                   
-    (Intercept):Networks      5.665           27      0.20982    33.171    5.7264e-134     1.924e-50    1.4525e-60    3.0868e-07
-    Housing:Networks        0.70867           54     0.013124    2.0748     1.0394e-05     0.0043155     0.0020329        0.1345
-    Error(Networks)          10.247         1620    0.0063252                                                                   
-    (Intercept):conn         44.087         3320     0.013279    3.1201              0    1.7244e-11    5.5522e-42       0.08242
-    Housing:conn             29.238         6640    0.0044033    1.0346       0.025955       0.39207       0.31223       0.36162
-    Error(conn)               847.8    1.992e+05     0.004256                                                                   
 
 ```
 
