@@ -40,7 +40,7 @@ group,between
 
 ## 4. path_parcellation_table
 
-This is a [Matlab file](./parcel.mat) that has the assignment of each ROI to their corresponding network.
+This is a [Matlab file](./parcel.mat) that has the assignment of each ROI to their corresponding network. (see details in the section [Detailed specifications for input files and data](../details/detailed_description.md)).
 
 ## 5. path_Group_Color_Table
 
