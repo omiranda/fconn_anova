@@ -2,6 +2,8 @@
 
 ## Mandatory Inputs 
 
+They need to be provided in this order: 
+
 - **path_imaging**. Neuroimaging data. Path to neuroimaging data. This input argument can be:
     - path to a dot mat file where the last dimension corresponds to participant index
     - path to a csv file with imaging data where the number of columns dimension corresponds to participant index. No headers
