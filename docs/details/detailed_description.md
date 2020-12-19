@@ -14,9 +14,7 @@ They need to be provided in this order:
 - **path_group_Design_Table** Path to group design table that indicates which elements of the **demographics_Table** will be used in this analysis. This table also will indicate if each included parameters is a *between* or *within* factor. This table must have the following headers in the presented order:
     - Variable: Column names from the **demographics_Table** that will be used in the analysis. Column names listed in the **demographics_Table** but not included here will be ignored
     - Design: Only option are *between* or *within*
-
-## Optional inputs
-- **parcel**, Parcel object. If not provided it will use defaults
+- **path_parcellation_table**, Parcel object. If not provided it will use defaults
     - dot mat file with assignemnt of ROIs to functional networks
     - table that assigns ROIs to functional networks. The number of ROIs (column ix, see below) must equal the number of elements of the neuroimaging data (i.e. mandatory input **path_imaging**). This table must be saved as a csv file and must have the following headers in the presented order:
         - index
@@ -25,6 +23,8 @@ They need to be provided in this order:
         - R. Number from 0 to 1 to indicate the Red value for the RGB colormap.
         - G. Number from 0 to 1 to indicate the Green value for the RGB colormap.
         - B. Number from 0 to 1 to indicate the Blue value for the RGB colormap.
+## Optional inputs
+
 
 - **path_Group_Color_Table**. If not provided, colors will be assigned 
 - **options**, an structure with the required fields or a dot m  file with the text to define this structure
