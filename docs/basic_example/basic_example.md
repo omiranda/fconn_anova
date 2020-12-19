@@ -9,7 +9,8 @@ In this example we'll use fake data from 63 participants. Data was parcellated u
 
 
 ## Optional inputs, quick overview
-- **output_folder**:
+- **output_folder**: path to folder to save data. The folder is created if it does not exist. If not provided, data is saved at the folder you are in.
+    
 
 ## Runing the example
 ```
