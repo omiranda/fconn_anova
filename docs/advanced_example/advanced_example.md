@@ -9,7 +9,12 @@ We will assume that the connectivity matrices were made using the [GUI environme
 
 ## 2. path_demographics_Table
 
-In this csv file we will make group assignment and also indicate which scan to include. As defined in the [Detailed specifications for input files and data](../details/detailed_description.md)
+In this csv file we will make group assignment and also indicate which scan to include (see details in the section [Detailed specifications for input files and data](../details/detailed_description.md)). This file has 4 columns with the following headers:
+
+- **id**: This column indicate the subject id.
+- **consecutive_number**: Here you specify the relative position of the corresponding coonnectivity matrix as stored in **path_imaging**.
+- **age**: Here we decided to name one of the factors **age**. Notice that you can use the name that you want. Corresponding row indicates the age of the participant when the scan was acquired. Noticed that this variable is *text*. The analysis will assume that this variable is categorical.
+- **group**: Here
 
 Here we show a few rows 
 ```
@@ -19,7 +24,7 @@ sub-MMU45938,2,24m,case
 sub-MMU45938,3,36m,case
 sub-MMU45938,4,06m,case
 sub-MMU45967,11,12m,case
-``
+```
 
 ## 3. path_group_Design_Table
 
