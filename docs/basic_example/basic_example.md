@@ -1,4 +1,4 @@
-In this example we'll use fake data from 63 participants where each participant can belong to the **Housing** groups *G1*, *G2*, or *G3* (Tha variable Housing is defined in the demographics table. The user can define its own variable name). Data was parcellated using the ROI definition by [Bezgin et al, 2012](https://pubmed.ncbi.nlm.nih.gov/22521477/). ROIs were assigned to functional networks as proposed by [Grayson et al., 2016](https://pubmed.ncbi.nlm.nih.gov/27477019/)
+In this example we'll use fake data from 63 participants where each participant can belong to the **Housing** groups *G1*, *G2*, or *G3* (Tha variable Housing is defined in the demographics table. The user can define their own variable name). Data was parcellated using the ROI definition by [Bezgin et al, 2012](https://pubmed.ncbi.nlm.nih.gov/22521477/). ROIs were assigned to functional networks as proposed by [Grayson et al., 2016](https://pubmed.ncbi.nlm.nih.gov/27477019/)
 
 ## Mandatory inputs, quick overview
 
