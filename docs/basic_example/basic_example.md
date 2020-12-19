@@ -2,9 +2,9 @@ In this example we'll use fake data from 63 participants. Data was parcellated u
 
 ## Mandatory inputs, quick overview
 
-- [**path_imaging**](./fconn_63_scanns.mat): This input can be a path to a file containing the connectivity matrices for each participants. It can be the output file made by the  [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/).
+- [**path_imaging**](./fconn_63_scanns.mat): This input can be a path to a file containing the connectivity matrices for each participant. It can be the output file made by the  [GUI environments](https://gui-environments-documentation.readthedocs.io/en/latest/GUI_environments/).
 - [**path_demographics_Table**](./table_subjects.csv): File that describes the relative position of each connectivity matrix on **path_imaging**. It also assign each participant to its corresponding group.
-- [**path_group_Design_Table**](./Group_Design_Table.csv): It defines what type of variable the grouping variables as *within* or *between* factors,
+- [**path_group_Design_Table**](./Group_Design_Table.csv): It defines what type of variable the grouping variables as *within* or *between* factor,
 - [**path_parcellation_table**](./parcel.mat): File assigning ROIs to functional networks.
 
 
@@ -30,3 +30,8 @@ run_fconn_anovan(path_imaging,...
     'output_folder',output_folder);
 }
 ```
+
+## Outputs displayed in terminal of Matlab
+
+
+## Outputs saved in *output_folder*
