@@ -203,7 +203,7 @@ When completed, you will see the main anova table
 
 ```
 
-## Outputs saved in *output_folder*
+## 4. Outputs saved in *output_folder*
 
 The function will save figures and data in the **output_folder**. 
 
